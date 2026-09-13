@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0F5132" />
+  <title>Eire Finder — See what the listing doesn't show</title>
+  <meta name="description" content="Eire Finder is a Chrome extension that pins official sale history, true time on market and street-level price context onto every Daft.ie and MyHome.ie advert. €1.99 a month." />
+  <meta property="og:title" content="Eire Finder — See what the listing doesn't show" />
+  <meta property="og:description" content="Official sale history, true days on market and street comparables, pinned onto Irish property adverts automatically. €1.99/month." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
+  <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-testid="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" data-testid="brand-link" aria-label="Eire Finder — back to top">
+        <svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="7" fill="#0F5132"/><circle cx="12" cy="12" r="5.2" fill="none" stroke="#FBF9F5" stroke-width="2"/><circle cx="18.5" cy="18.5" r="2.6" fill="#C59B27"/></svg>
+        <span>Eire&nbsp;Finder</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#how-it-works" data-testid="nav-link-how-it-works">How it works</a>
+        <a href="#panel" data-testid="nav-link-panel">The panel</a>
+        <a href="#pricing" data-testid="nav-link-pricing">Pricing</a>
+        <a href="#faq" data-testid="nav-link-faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="#waitlist" data-testid="header-cta-btn">
+        Add to Chrome
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v10m0 0-4-4m4 4 4-4M5 18h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow fade-load d0" data-testid="hero-eyebrow"><span class="dot" aria-hidden="true"></span> For buyers on Daft.ie &amp; MyHome.ie</p>
+          <h1 class="hero-title">
+            <span class="line"><span class="line-inner">See what the</span></span>
+            <span class="line"><span class="line-inner">listing <em class="accent">doesn&rsquo;t</em></span></span>
+            <span class="line"><span class="line-inner"><em class="accent">show you.</em></span></span>
+          </h1>
+          <p class="hero-sub fade-load d3">Eire Finder is a browser extension that pins official sale history, true time on market and street-level price context onto every advert &mdash; automatically, whilst you&rsquo;re looking at it.</p>
+          <p class="hero-note fade-load d4">Anyone can trawl the government&rsquo;s Property Price Register by hand. Eire Finder does the cross-checking at the exact moment you need it.</p>
+          <div class="hero-cta-row fade-load d5">
+            <a class="btn btn-primary btn-lg" href="#waitlist" data-testid="hero-cta-btn">
+              Add to Chrome
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v10m0 0-4-4m4 4 4-4M5 18h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="link-quiet" href="#how-it-works" data-testid="hero-secondary-link">See how it works
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m0 0-5-5m5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <p class="hero-fine mono fade-load d6">Not in the Chrome Web Store yet &mdash; this takes you to the waitlist.</p>
+          <ul class="hero-chips mono fade-load d6">
+            <li>Property Price Register data</li>
+            <li>Works with Daft.ie &amp; MyHome.ie</li>
+            <li>€1.99 / month</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual fade-load d2" data-tilt>
+          <div data-tilt-inner class="hero-visual-inner">
+            <div class="ledger-card" aria-hidden="true">
+              <p class="ledger-title">Public register &mdash; residential</p>
+              <div class="ledger-row"><span>14 Jun 2016</span><span class="ledger-fill" aria-hidden="true"></span><span>€385,000</span></div>
+              <div class="ledger-row"><span>07 Feb 2009</span><span class="ledger-fill" aria-hidden="true"></span><span>€298,000</span></div>
+              <div class="ledger-row"><span>Folio 12118L</span><span class="ledger-fill" aria-hidden="true"></span><span>Dublin 3</span></div>
+            </div>
+
+            <div class="panel" data-testid="hero-panel">
+              <div class="panel-head">
+                <div>
+                  <p class="panel-address">24 Seafield Road East</p>
+                  <p class="panel-sub">Clontarf, Dublin 3</p>
+                </div>
+                <span class="panel-ref mono">EF&middot;24317</span>
+              </div>
+              <div class="panel-block">
+                <p class="panel-label">Sale history &mdash; Property Price Register</p>
+                <p class="panel-big">€385,000</p>
+                <p class="panel-meta">Sold 14 June 2016 &middot; asking now €495,000</p>
+              </div>
+              <div class="panel-block">
+                <p class="panel-label">True time on market</p>
+                <p class="panel-big">312 days</p>
+                <div class="panel-bar"><span style="--w:86%"></span></div>
+                <p class="panel-meta">Listed for nearly a year &mdash; not unusual in Dublin.</p>
+              </div>
+              <div class="panel-block">
+                <p class="panel-label">Same street, registered sales</p>
+                <ul class="panel-comp">
+                  <li><span>18 Seafield Road East</span><span class="mono dim">May 2024</span><span class="mono">€615,000</span></li>
+                  <li><span>31 Seafield Road East</span><span class="mono dim">Nov 2023</span><span class="mono">€560,000</span></li>
+                  <li><span>7 Seafield Road East</span><span class="mono dim">Aug 2022</span><span class="mono">€495,000</span></li>
+                </ul>
+              </div>
+              <div class="panel-block panel-cta-block">
+                <a class="panel-cta" href="https://www.google.com/search?q=%2224+Seafield+Road+East%22+Clontarf+Dublin+3" target="_blank" rel="noopener noreferrer" data-testid="panel-google-cta">
+                  Search this address on Google
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="stamp" data-testid="hero-stamp" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <defs><path id="stamp-circle-hero" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+                <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="60" cy="60" r="32" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <text class="stamp-text"><textPath href="#stamp-circle-hero">PROPERTY PRICE REGISTER &#183; MATCHED &#183;</textPath></text>
+                <path d="M48 60l8 8 16-16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <span class="fab" data-testid="hero-fab" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4.2-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" data-testid="marquee">
+      <div class="marquee-track">
+        <ul class="marquee-list">
+          <li>Sale history &mdash; Property Price Register</li><li class="dia" aria-hidden="true">&#10022;</li>
+          <li>True days on market</li><li class="dia" aria-hidden="true">&#10022;</li>
+          <li>Street comparables</li><li class="dia" aria-hidden="true">&#10022;</li>
+          <li>Google search shortcut</li><li class="dia" aria-hidden="true">&#10022;</li>
+          <li>Works with Daft.ie &amp; MyHome.ie</li><li class="dia" aria-hidden="true">&#10022;</li>
+          <li>€1.99 a month</li><li class="dia" aria-hidden="true">&#10022;</li>
+        </ul>
+        <ul class="marquee-list" aria-hidden="true">
+          <li>Sale history &mdash; Property Price Register</li><li class="dia">&#10022;</li>
+          <li>True days on market</li><li class="dia">&#10022;</li>
+          <li>Street comparables</li><li class="dia">&#10022;</li>
+          <li>Google search shortcut</li><li class="dia">&#10022;</li>
+          <li>Works with Daft.ie &amp; MyHome.ie</li><li class="dia">&#10022;</li>
+          <li>€1.99 a month</li><li class="dia">&#10022;</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="chapter mono">01 &mdash; The problem</p>
+          <h2>The advert tells you <em class="accent">half the story.</em></h2>
+          <p class="lead">People make six-figure decisions on Irish property with information that is technically public &mdash; but scattered across records no advert will gather for you.</p>
+        </div>
+        <div class="chapters">
+          <article class="chapter-card" data-reveal data-testid="problem-chapter-1">
+            <span class="chapter-no mono" aria-hidden="true">01</span>
+            <h3>Asking price isn&rsquo;t selling price</h3>
+            <p>What a property last sold for &mdash; and when &mdash; is public record in Ireland. Almost nobody checks it before making an offer.</p>
+          </article>
+          <article class="chapter-card" data-reveal data-reveal-delay="90" data-testid="problem-chapter-2">
+            <span class="chapter-no mono" aria-hidden="true">02</span>
+            <h3>Time on market is hidden</h3>
+            <p>Listings routinely sit for over a year. That is negotiating leverage the advert never mentions &mdash; and never will.</p>
+          </article>
+          <article class="chapter-card" data-reveal data-reveal-delay="180" data-testid="problem-chapter-3">
+            <span class="chapter-no mono" aria-hidden="true">03</span>
+            <h3>One price, no context</h3>
+            <p>Registered sales on the same street tell you what the market actually pays. Nothing puts them beside the advert.</p>
+          </article>
+        </div>
+        <p class="manifesto-close" data-reveal><em>None of this is secret. All of it is scattered.</em></p>
+      </div>
+    </section>
+
+    <!-- ============ POSITIONING BAND ============ -->
+    <section class="band">
+      <div class="container band-inner" data-reveal>
+        <p class="chapter chapter-gold mono">What Eire Finder is</p>
+        <h2>Not another property portal.</h2>
+        <p class="band-copy">Eire Finder lists no properties and competes with no one. It is an intelligence layer that runs on top of the adverts you are already viewing. There is nothing for estate agents to adopt, no new website to check &mdash; it works from the day you install it.</p>
+        <ul class="band-facts mono">
+          <li>No listings</li>
+          <li>No agents</li>
+          <li>No waiting</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="chapter mono">02 &mdash; How it works</p>
+          <h2>Four steps, <em class="accent">about thirty seconds.</em></h2>
+        </div>
+        <ol class="steps">
+          <li class="step" data-reveal data-testid="step-1">
+            <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v10m0 0-4-4m4 4 4-4M5 17v2a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 19v-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="step-no mono" aria-hidden="true">01</span>
+            <h3>Install the extension</h3>
+            <p>One click in Chrome. Eire Finder asks for nothing it doesn&rsquo;t need.</p>
+          </li>
+          <li class="step" data-reveal data-reveal-delay="90" data-testid="step-2">
+            <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m20.5 20.5-4.8-4.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+            <span class="step-no mono" aria-hidden="true">02</span>
+            <h3>Browse as usual</h3>
+            <p>Keep searching Daft.ie and MyHome.ie exactly as you do today.</p>
+          </li>
+          <li class="step" data-reveal data-reveal-delay="180" data-testid="step-3">
+            <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4l6.2 14.8 2.2-6.6 6.6-2.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M15.5 15.5 20 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+            <span class="step-no mono" aria-hidden="true">03</span>
+            <h3>Spot the floating button</h3>
+            <p>On any advert, a small green button appears in the bottom-right corner.</p>
+          </li>
+          <li class="step" data-reveal data-reveal-delay="270" data-testid="step-4">
+            <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7.5 9.5h9M7.5 13h5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+            <span class="step-no mono" aria-hidden="true">04</span>
+            <h3>Read the full picture</h3>
+            <p>Sale history, days on market, street comparables and a Google shortcut &mdash; in one panel, right beside the advert.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PANEL MOCKUP ============ -->
+    <section class="section section-tint" id="panel">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="chapter mono">03 &mdash; The panel</p>
+          <h2>Everything the advert left out, <em class="accent">in one place.</em></h2>
+          <p class="lead">Click the floating button and the register comes to you. Here is the panel on a sample advert.</p>
+        </div>
+        <div class="panel-demo" data-spotlight>
+          <div class="browser" data-parallax data-reveal data-testid="panel-mockup">
+            <span class="sample-tag mono">Sample data &mdash; for illustration</span>
+            <div class="browser-bar">
+              <span class="b-dot" aria-hidden="true"></span><span class="b-dot" aria-hidden="true"></span><span class="b-dot" aria-hidden="true"></span>
+              <span class="b-url mono">daft.ie / for-sale / 24-seafield-road-east-clontarf-dublin-3</span>
+            </div>
+            <div class="browser-body">
+              <div class="docket">
+                <p class="docket-label mono">Advert image &mdash; sample</p>
+              </div>
+              <div class="listing">
+                <p class="listing-crumb mono">Daft.ie / for-sale / Dublin</p>
+                <h3 class="listing-title">24 Seafield Road East, Clontarf, Dublin 3</h3>
+                <p class="listing-price">€495,000 <span class="listing-tag mono">Private treaty</span></p>
+                <p class="listing-chips mono">3 bed &middot; 2 bath &middot; 92 m&sup2;</p>
+                <div class="skel" aria-hidden="true"></div>
+                <div class="skel skel-2" aria-hidden="true"></div>
+                <div class="listing-agent"><span aria-hidden="true"></span><span class="skel skel-3" aria-hidden="true"></span></div>
+              </div>
+            </div>
+
+            <div class="panel panel--demo">
+              <div class="panel-head">
+                <div>
+                  <p class="panel-address">24 Seafield Road East</p>
+                  <p class="panel-sub">Clontarf, Dublin 3</p>
+                </div>
+                <span class="panel-ref mono">EF&middot;24317</span>
+              </div>
+              <div class="panel-block">
+                <span class="block-no mono" aria-hidden="true">1</span>
+                <p class="panel-label">Sale history &mdash; Property Price Register</p>
+                <p class="panel-big">€385,000</p>
+                <p class="panel-meta">Sold 14 June 2016 &middot; asking now €495,000</p>
+              </div>
+              <div class="panel-block">
+                <span class="block-no mono" aria-hidden="true">2</span>
+                <p class="panel-label">True time on market</p>
+                <p class="panel-big">312 days</p>
+                <div class="panel-bar"><span style="--w:86%"></span></div>
+                <p class="panel-meta">Listed for nearly a year &mdash; not unusual in Dublin.</p>
+              </div>
+              <div class="panel-block">
+                <span class="block-no mono" aria-hidden="true">3</span>
+                <p class="panel-label">Same street, registered sales</p>
+                <ul class="panel-comp">
+                  <li><span>18 Seafield Road East</span><span class="mono dim">May 2024</span><span class="mono">€615,000</span></li>
+                  <li><span>31 Seafield Road East</span><span class="mono dim">Nov 2023</span><span class="mono">€560,000</span></li>
+                  <li><span>7 Seafield Road East</span><span class="mono dim">Aug 2022</span><span class="mono">€495,000</span></li>
+                </ul>
+              </div>
+              <div class="panel-block panel-cta-block">
+                <span class="block-no mono" aria-hidden="true">4</span>
+                <a class="panel-cta" href="https://www.google.com/search?q=%2224+Seafield+Road+East%22+Clontarf+Dublin+3" target="_blank" rel="noopener noreferrer" data-testid="panel-google-cta-demo">
+                  Search this address on Google
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <span class="fab fab--demo" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4.2-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+
+          <ol class="panel-legend">
+            <li data-reveal data-testid="panel-legend-1"><span class="legend-no mono" aria-hidden="true">1</span><div><h3>Sale history</h3><p>Prior sale price and date, matched from the Property Price Register.</p></div></li>
+            <li data-reveal data-reveal-delay="90" data-testid="panel-legend-2"><span class="legend-no mono" aria-hidden="true">2</span><div><h3>True time on market</h3><p>Days listed, counted from the advert&rsquo;s first appearance.</p></div></li>
+            <li data-reveal data-reveal-delay="180" data-testid="panel-legend-3"><span class="legend-no mono" aria-hidden="true">3</span><div><h3>Street comparables</h3><p>Registered sales on the same road, for instant price context.</p></div></li>
+            <li data-reveal data-reveal-delay="270" data-testid="panel-legend-4"><span class="legend-no mono" aria-hidden="true">4</span><div><h3>Google shortcut</h3><p>One tap to search the address for history, news and more.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="chapter mono">04 &mdash; Pricing</p>
+          <h2>€1.99 a month. <em class="accent">The decision it helps with is a little larger.</em></h2>
+        </div>
+        <div class="price-card" data-spotlight data-reveal data-testid="pricing-card">
+          <div class="price-top">
+            <span class="mono-tag mono">Full access</span>
+            <span class="seal mono">Independent &middot; No ads</span>
+          </div>
+          <p class="price"><span class="price-amount">€1.99</span><span class="price-per">/ month</span></p>
+          <p class="price-note">Billed monthly. Cancel anytime.</p>
+          <ul class="price-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited look-ups on Daft.ie and MyHome.ie</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Automatic matching against the Property Price Register</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Street comparables and Google search shortcut</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Every future data source, included</li>
+          </ul>
+          <a class="btn btn-primary btn-lg btn-block" href="#waitlist" data-testid="pricing-cta-btn">Subscribe for €1.99 / month</a>
+          <p class="price-fine">Secure checkout via Stripe opens at launch &mdash; join the waitlist for first access.</p>
+        </div>
+        <p class="pricing-foot mono" data-reveal>One plan. No tiers. Cancel whenever.</p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-tint" id="faq">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="chapter mono">05 &mdash; FAQ</p>
+          <h2>Fair questions.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" data-reveal data-testid="faq-item-1">
+            <summary>Where does the data come from?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Primarily the Property Price Register &mdash; the official Irish government record of residential property sales. Sale prices and dates are matched from that register automatically. True time on market comes from the listing itself, and street comparables are other registered sales on the same road, organised so you can read the local market at a glance.</p></div>
+          </details>
+          <details class="faq-item" data-reveal data-reveal-delay="60" data-testid="faq-item-2">
+            <summary>Does it work on sites other than Daft and MyHome?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Not yet. Daft.ie and MyHome.ie together cover the vast majority of property adverts in Ireland, so that is where we started. Support for other sites &mdash; Property.ie included &mdash; is on the roadmap.</p></div>
+          </details>
+          <details class="faq-item" data-reveal data-reveal-delay="120" data-testid="faq-item-3">
+            <summary>Is Eire Finder affiliated with Daft, MyHome or the Irish government?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>No. Eire Finder is a fully independent product with no affiliation to any property portal, estate agent or State body. We simply read public records that anyone can consult, and put them beside the advert &mdash; at the moment you actually need them.</p></div>
+          </details>
+          <details class="faq-item" data-reveal data-reveal-delay="180" data-testid="faq-item-4">
+            <summary>Will the extension track my browsing?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>No. Eire Finder activates only on supported property sites, and nothing about your browsing history leaves your browser.</p></div>
+          </details>
+          <details class="faq-item" data-reveal data-reveal-delay="240" data-testid="faq-item-5">
+            <summary>Why isn&rsquo;t it free?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Accurate, automatic matching against official records takes continuous work. €1.99 a month keeps Eire Finder independent, ad-free and maintained &mdash; a small fraction of the cost of the decision it supports.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WAITLIST ============ -->
+    <section class="section" id="waitlist">
+      <div class="container">
+        <div class="waitlist-card" data-reveal>
+          <div class="stamp stamp-mini" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="stamp-circle-wl" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+              <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="60" cy="60" r="32" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              <text class="stamp-text"><textPath href="#stamp-circle-wl">LAUNCH LIST &#183; EIRE FINDER &#183; LAUNCH LIST &#183;</textPath></text>
+              <path d="M48 60l8 8 16-16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="chapter mono">06 &mdash; Waitlist</p>
+          <h2>Get the launch email.</h2>
+          <p class="waitlist-copy">Eire Finder is in the final stages of testing. Leave your email and we&rsquo;ll send one message when the extension goes live on the Chrome Web Store &mdash; nothing else, ever.</p>
+          <form class="waitlist-form" data-testid="waitlist-form" novalidate>
+            <label class="visually-hidden" for="waitlist-email">Email address</label>
+            <input id="waitlist-email" name="email" type="email" autocomplete="email" placeholder="you@example.ie" data-testid="waitlist-email-input" />
+            <button class="btn btn-primary btn-lg" type="submit" data-testid="waitlist-submit-btn">Join the waitlist</button>
+          </form>
+          <p class="waitlist-msg" data-testid="waitlist-error" role="alert" hidden></p>
+          <div class="waitlist-success" data-testid="waitlist-success" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m8 12.5 2.8 2.8L16.5 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p>You&rsquo;re on the list &mdash; we&rsquo;ll be in touch at launch.</p>
+          </div>
+          <p class="fine">One email at launch. No newsletter, no sharing, unsubscribe with one click.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#top" data-testid="footer-brand-link">
+          <svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="7" fill="#C59B27"/><circle cx="12" cy="12" r="5.2" fill="none" stroke="#0A2E1F" stroke-width="2"/><circle cx="18.5" cy="18.5" r="2.6" fill="#0A2E1F"/></svg>
+          <span>Eire&nbsp;Finder</span>
+        </a>
+        <p>Independent property intelligence for Irish buyers.</p>
+      </div>
+      <div class="footer-col">
+        <p class="mono-label mono">Contact</p>
+        <a href="mailto:info@eirefinder.ie" data-testid="footer-contact-link">info@eirefinder.ie</a>
+      </div>
+      <div class="footer-col">
+        <p class="mono-label mono">Page</p>
+        <a href="#how-it-works" data-testid="footer-link-how-it-works">How it works</a>
+        <a href="#panel" data-testid="footer-link-panel">The panel</a>
+        <a href="#pricing" data-testid="footer-link-pricing">Pricing</a>
+        <a href="#faq" data-testid="footer-link-faq">FAQ</a>
+        <a href="#waitlist" data-testid="footer-link-waitlist">Join the waitlist</a>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p>© <span id="year" data-testid="footer-year">2026</span> Eire Finder. Eire Finder is an independent product and is not affiliated with Daft.ie, MyHome.ie, Property.ie, the Property Price Register or any Irish State body.</p>
+      <p class="mono">All panel figures shown on this page are sample data.</p>
+    </div>
+  </footer>
+
+  <div id="root" hidden></div>
+  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

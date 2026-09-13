@@ -1,0 +1,256 @@
+{
+  "identity_and_theme": {
+    "brand_name": "Eire Finder",
+    "tagline": "The Intelligence Layer for Irish Property Buyers",
+    "theme_archetype": "Official Public Registry Ledger x Modern High-Trust Fintech",
+    "language": "British English (colour, organise, prioritise, licence, programme)",
+    "tone": "Trustworthy, authoritative, direct, data-driven, restrained, zero sales hype",
+    "target_audience": "First-time buyers and property investors in Ireland seeking complete listing transparency",
+    "core_value_proposition": "Cross-references official Irish Property Price Register (PPR) records, true days-on-market, and street comparables automatically the moment you view an advert on Daft.ie or MyHome.ie."
+  },
+  "typography": {
+    "anti_default_rule": "STRICTLY NO Inter, NO Roboto, NO Space Grotesk",
+    "fonts": {
+      "heading": "'Cabinet Grotesk', 'Fraunces', 'Georgia', serif",
+      "body": "'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif",
+      "mono": "'JetBrains Mono', 'IBM Plex Mono', monospace"
+    },
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.08] font-extrabold",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-snug font-bold",
+      "h3_subsection": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h4_card": "text-lg sm:text-xl font-semibold",
+      "body_lg": "text-lg text-slate-700 leading-relaxed",
+      "body_base": "text-base text-slate-600 leading-relaxed",
+      "caption": "text-xs font-mono uppercase tracking-[0.2em] text-emerald-900/70"
+    },
+    "font_imports_html": "<link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap' rel='stylesheet'>"
+  },
+  "colors": {
+    "palette": {
+      "primary_clover": "#0f5132",
+      "primary_clover_hover": "#0a3a24",
+      "primary_clover_light": "#e8f5ed",
+      "bg_parchment": "#FBF9F5",
+      "bg_parchment_alt": "#F4F1EA",
+      "surface_card": "#FFFFFF",
+      "surface_card_border": "#E2DDD3",
+      "text_dark_ink": "#1A231E",
+      "text_muted": "#5A655D",
+      "accent_gold_seal": "#C59B27",
+      "accent_gold_light": "#FFF9EB",
+      "alert_warning_amber": "#D97706",
+      "dark_section_bg": "#0D1B14",
+      "dark_section_border": "#1E382B"
+    },
+    "rules": {
+      "contrast": "Text must maintain at least 4.5:1 APCA contrast ratio. White text on dark green #0f5132 is allowed. Dark ink #1A231E on parchment #FBF9F5 achieves 14:1 contrast.",
+      "gradient_limit": "NO full-screen gradient blankets. Gradients allowed ONLY for subtle spotlight radial effects and border hairline glow."
+    }
+  },
+  "spacing_and_layout": {
+    "container_max": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-20 sm:py-28 lg:py-32",
+    "border_radius": "rounded-lg or rounded-xl (max 12px) to match official government ledger feel. No hyper-rounded bubble corners.",
+    "grid_strategy": "Asymmetric bento grid with high-density data cards, hairline borders (1px solid #E2DDD3), and official document serial tag styling."
+  },
+  "sections_breakdown": [
+    {
+      "section_id": "nav_header",
+      "name": "Navigation Bar",
+      "design_pattern": "Sticky Glassmorphic Parchment Header with Official Registry Badge",
+      "elements": [
+        "Brand Logo: 'Eire Finder' with miniature Irish clover SVG icon & 'v1.4 Official Data Spec' tag",
+        "Nav Links: 'The Problem', 'How It Works', 'Extension Preview', 'Pricing', 'FAQ'",
+        "CTA Button: 'Add to Chrome — €1.99/mo' (Primary green #0f5132 with subtle hover shine)"
+      ]
+    },
+    {
+      "section_id": "hero",
+      "name": "Hero Section",
+      "design_pattern": "Kinetic Ledger Reveal & Official Registry Stamp Moment",
+      "elements": [
+        "Overline Badge: 'STRICTLY INDEPENDENT PROPERTY INTELLIGENCE • IRELAND'",
+        "H1 Headline: 'See what the listing doesn't show you.'",
+        "Subheadline: 'Eire Finder overlays official Property Price Register history, true days on market, and street comparables directly onto Daft.ie & MyHome.ie property adverts.'",
+        "CTA Group: Primary 'Add to Chrome' email waitlist trigger + Secondary 'Explore Interactive Preview' scroll trigger",
+        "Key Metrics Bar: '270,000+ PPR Records Indexed', '0.4s Auto-Match', '100% Independent'",
+        "Stamp Graphic: SVG Animated Rubber Stamp effect reading 'OFFICIAL REGISTER VERIFIED'"
+      ]
+    },
+    {
+      "section_id": "editorial_marquee",
+      "name": "Ticker Tape / Marquee",
+      "design_pattern": "Slow Editorial Paper Ribbon with Low-Contrast Monospace Text",
+      "elements": [
+        "Continuous ticker text: 'PROPERTY PRICE REGISTER ARCHIVE • TRUE DAYS ON MARKET • STREET COMPARABLES • DIRECT ADDRESS SEARCH • NO ESTATE AGENT HYPE • DAFT.IE OVERLAY • MYHOME.IE OVERLAY • €1.99/MONTH'"
+      ]
+    },
+    {
+      "section_id": "problem",
+      "name": "The Problem Section",
+      "design_pattern": "Numbered Manifesto Chapters with High Contrast Ledger Cards",
+      "items": [
+        {
+          "number": "01",
+          "title": "Asking Price ≠ Actual Sale Value",
+          "description": "Property listings display asking prices set by sellers and agents. What you actually need to know is what similar houses on that exact street sold for in the official government registry."
+        },
+        {
+          "number": "02",
+          "title": "Hidden Time on Market",
+          "description": "Adverts are frequently relisted to reset perceived freshness. Properties sitting for 300+ days often look like fresh uploads to unsuspecting buyers."
+        },
+        {
+          "number": "03",
+          "title": "Manual Cross-Referencing Friction",
+          "description": "Checking the government Property Price Register requires switching tabs, searching mismatched address formats, and filtering through dozens of irrelevant entries by hand."
+        }
+      ]
+    },
+    {
+      "section_id": "how_it_works",
+      "name": "How It Works Section",
+      "design_pattern": "4-Step Process Timeline with Monospace Metadata Tags",
+      "steps": [
+        {"step": "01", "title": "Install Chrome Extension", "desc": "One-click install into Google Chrome. Takes less than 15 seconds."},
+        {"step": "02", "title": "Browse Daft or MyHome", "desc": "Visit property listings as you normally do. No new portal to learn."},
+        {"step": "03", "title": "Floating Button Appears", "desc": "A subtle green Eire Finder intelligence trigger rests in your bottom-right corner."},
+        {"step": "04", "title": "Instant Market Reality", "desc": "Click to unveil historical sale prices, true days listed, and street comparables."}
+      ]
+    },
+    {
+      "section_id": "floating_panel_mockup",
+      "name": "Interactive Extension Mockup",
+      "design_pattern": "Spotlight-Treated CSS Built Chrome Extension Floating Panel on Simulated Advert",
+      "elements": [
+        "Simulated Daft.ie/MyHome.ie Advert backdrop showing a Dublin Georgian townhouse",
+        "Floating Grammarly-style Eire Finder button positioned at bottom-right corner with pulse status dot",
+        "Expandable CSS Side Panel containing: 1. PPR Sale History (e.g. Sold for €410,000 in Nov 2021), 2. True Days on Market badge ('184 Days Listed'), 3. Street Comparables Table (3 neighboring properties with sold dates & prices), 4. One-click Google Search Shortcut button",
+        "Interactive Toggle Tabs to test different property listing scenarios"
+      ]
+    },
+    {
+      "section_id": "pricing",
+      "name": "Pricing Section",
+      "design_pattern": "Single High-Trust Subscription Card with Clear Value Context",
+      "details": {
+        "price": "€1.99",
+        "cadence": "per month",
+        "value_note": "Less than the price of a cup of coffee for total transparency on a €350,000+ life decision.",
+        "bullets": [
+          "Unlimited property lookup on Daft.ie & MyHome.ie",
+          "Official Property Price Register historical data overlay",
+          "True days on market tracker & relisting detection",
+          "Same-street comparable sales ledger",
+          "Direct Google address intelligence shortcut",
+          "Cancel anytime with 1-click via Stripe billing portal"
+        ],
+        "cta": "Start Subscription — €1.99/mo (Stripe)"
+      }
+    },
+    {
+      "section_id": "faq",
+      "name": "FAQ Accordion",
+      "design_pattern": "Clean Expandable Registry Card Accordion",
+      "questions": [
+        {
+          "q": "Where does the historical property price data come from?",
+          "a": "All historical sale data is sourced directly from the official Property Price Register (PPR), maintained by the Irish Property Services Regulatory Authority (PSR)."
+        },
+        {
+          "q": "Does Eire Finder work on sites other than Daft.ie and MyHome.ie?",
+          "a": "Currently, Eire Finder specifically targets Daft.ie and MyHome.ie as they cover over 95% of Irish residential listings. Support for additional portals is on our public roadmap."
+        },
+        {
+          "q": "Is Eire Finder affiliated with Daft, MyHome, or the Irish Government?",
+          "a": "No. Eire Finder is an entirely independent research tool created by property buyers for property buyers. We have no commercial relationship with listing portals or state bodies."
+        },
+        {
+          "q": "How does Eire Finder match listing addresses to government records?",
+          "a": "Our automated matching engine parses property titles, townlands, postal districts, and street names to match adverts against official PPR records in under 400 milliseconds."
+        }
+      ]
+    },
+    {
+      "section_id": "footer",
+      "name": "Footer Section",
+      "design_pattern": "Dark Ink Contrast Footer with Legal Disclaimers & Contact",
+      "elements": [
+        "Product Title & Archival Stamp Motif",
+        "Contact Email Link: info@eirefinder.ie",
+        "Disclaimers: Independent intelligence software. Property Price Register data published under Irish Open Data license.",
+        "Copyright & Privacy / Terms links"
+      ]
+    }
+  ],
+  "motion_and_interactions": {
+    "engine": "CSS Animations + Vanilla JS IntersectionObserver + Mouse-Tracking Spotlight via CSS Custom Properties + Lenis Smooth Scroll (via CDN)",
+    "effects": [
+      {
+        "name": "IntersectionObserver Fade-Up Reveal",
+        "class": "reveal-on-scroll",
+        "css": "opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);"
+      },
+      {
+        "name": "Rubber Stamp Effect",
+        "class": "stamp-animation",
+        "css": "transform: scale(3) rotate(-12deg); opacity: 0; animation: stampDown 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;"
+      },
+      {
+        "name": "Mouse Spotlight Grid",
+        "js": "document.querySelectorAll('.spotlight-card').forEach(card => card.addEventListener('mousemove', e => { const rect = card.getBoundingClientRect(); card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`); card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`); }))"
+      }
+    ]
+  },
+  "testing_and_accessibility": {
+    "data_testid_convention": "kebab-case, role-based",
+    "required_test_ids": [
+      "nav-brand-logo",
+      "nav-add-to-chrome-btn",
+      "hero-headline",
+      "hero-waitlist-input",
+      "hero-waitlist-submit-btn",
+      "hero-interactive-preview-btn",
+      "problem-chapter-1",
+      "problem-chapter-2",
+      "problem-chapter-3",
+      "how-it-works-step-1",
+      "extension-mockup-trigger-btn",
+      "extension-mockup-side-panel",
+      "extension-mockup-ppr-card",
+      "extension-mockup-days-badge",
+      "extension-mockup-comparables-table",
+      "pricing-subscribe-btn",
+      "faq-accordion-item-0",
+      "faq-accordion-item-1",
+      "faq-accordion-item-2",
+      "faq-accordion-item-3",
+      "footer-contact-link"
+    ]
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1779372371052-b2b3f32154c6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxkdWJsaW4lMjBhcmNoaXRlY3R1cmUlMjBpcmVsYW5kJTIwcHJvcGVydHklMjBzdHJlZXR8ZW58MHx8fHwxNzg5MzMxODgwfDA&ixlib=rb-4.1.0&q=85",
+      "category": "dublin_georgian_door_hero",
+      "description": "Red Georgian door with stone steps in Dublin, ideal for the simulated property advert backdrop"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Build the complete application directly into the project structure with zero placeholders.",
+    "Follow British English spelling strictly throughout all copy (colour, organise, prioritise, centre, licence).",
+    "Ensure plain CSS/JS compatibility directives are clear for any vanilla or React implementation.",
+    "Include all required data-testid attributes on every interactive element.",
+    "Make the floating panel mockup interactive with working tabs or toggle states."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Avoid generic centered layouts and standard blue SaaS gradients.",
+    "Dark clover green (#0f5132) must be used as a solid high-trust anchor, paired with archival parchment tones (#FBF9F5).",
+    "Never use Inter, Roboto, or Space Grotesk for headings.",
+    "Add generous padding (p-8 to p-12) to all bordered cards to prevent text collision.",
+    "Use data-testid on every interactive element."
+  ]
+},
+  "overwrite": true,
+  "path": "/app/design_guidelines.json"
+}
