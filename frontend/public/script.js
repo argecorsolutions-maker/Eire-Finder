@@ -123,9 +123,8 @@
       var original = submitBtn.textContent;
       submitBtn.disabled = true;
       submitBtn.textContent = 'Joining\u2026';
-
-      // TODO: swap to https://api.eirefinder.ie/waitlist once the API is deployed on Railway. 
-      var WAITLIST_API_URL = 'http://localhost:8787/waitlist'; 
+      // TODO: swap to https://api.eirefinder.ie/waitlist once the API is deployed on Railway.
+      var WAITLIST_API_URL = 'http://localhost:8787/waitlist';
       fetch(WAITLIST_API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
