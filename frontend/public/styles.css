@@ -98,7 +98,10 @@ img, svg { display: block; }
 .chrome-icon::before, .chrome-icon::after { content: ""; position: absolute; border-radius: 50%; }
 .chrome-icon::before { inset: 21%; background: #fff; }
 .chrome-icon::after { inset: 32%; background: #4285F4; }
-.firefox-icon { background: radial-gradient(circle at 34% 28%, #FFE066, #FF9500 45%, #D93A00 82%); }
+.firefox-icon { background: none; }
+.firefox-icon::before, .firefox-icon::after { content: ""; position: absolute; border-radius: 0 50% 50% 50%; transform: rotate(45deg); }
+.firefox-icon::before { inset: 2%; background: radial-gradient(circle at 32% 28%, #FFE066, #FF9500 45%, #D93A00 85%); }
+.firefox-icon::after { inset: 38% 18% 12% 38%; background: #FFF3C4; opacity: 0.9; }
 .link-quiet { display: inline-flex; align-items: center; gap: 8px; font: 600 15px/1 var(--font-body); color: var(--ink-soft); padding: 12px 4px; }
 .link-quiet svg { width: 15px; height: 15px; transition: transform 0.25s var(--ease-out); }
 .link-quiet:hover { color: var(--green); }
