@@ -67,7 +67,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m0 0-5-5m5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
-          <p class="hero-fine mono fade-load d6">Not in the Chrome Web Store yet &mdash; this takes you to the waitlist.</p>
+          <p class="hero-fine mono fade-load d6">Not in the Chrome Web Store yet &mdash; this takes you to sign-up.</p>
           <ul class="hero-chips mono fade-load d6">
             <li>Property Price Register data</li>
             <li>Works with Daft.ie, MyHome.ie & Property.ie</li>
@@ -343,7 +343,7 @@
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Every future data source, included</li>
           </ul>
           <a class="btn btn-primary btn-lg btn-block" href="#waitlist" data-testid="pricing-cta-btn">Subscribe for €1.99 / month</a>
-          <p class="price-fine">Secure checkout via Stripe opens at launch &mdash; join the waitlist for first access.</p>
+          <p class="price-fine">Secure checkout via Stripe.</p>
         </div>
         <p class="pricing-foot mono" data-reveal>One plan. No tiers. Cancel whenever.</p>
       </div>
@@ -381,7 +381,7 @@
       </div>
     </section>
 
-    <!-- ============ WAITLIST ============ -->
+    <!-- ============ SUBSCRIBE ============ -->
     <section class="section" id="waitlist">
       <div class="container">
         <div class="waitlist-card" data-reveal>
@@ -390,24 +390,31 @@
               <defs><path id="stamp-circle-wl" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
               <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="2"/>
               <circle cx="60" cy="60" r="32" fill="none" stroke="currentColor" stroke-width="1.2"/>
-              <text class="stamp-text"><textPath href="#stamp-circle-wl">LAUNCH LIST &#183; EIRE FINDER &#183; LAUNCH LIST &#183;</textPath></text>
+              <text class="stamp-text"><textPath href="#stamp-circle-wl">FULL ACCESS &#183; EIRE FINDER &#183; FULL ACCESS &#183;</textPath></text>
               <path d="M48 60l8 8 16-16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <p class="chapter mono">06 &mdash; Waitlist</p>
-          <h2>Get the launch email.</h2>
-          <p class="waitlist-copy">Eire Finder is in the final stages of testing. Leave your email and we&rsquo;ll send one message when the extension goes live on the Chrome Web Store &mdash; nothing else, ever.</p>
-          <form class="waitlist-form" data-testid="waitlist-form" novalidate>
-            <label class="visually-hidden" for="waitlist-email">Email address</label>
-            <input id="waitlist-email" name="email" type="email" autocomplete="email" placeholder="you@example.ie" data-testid="waitlist-email-input" />
-            <button class="btn btn-primary btn-lg" type="submit" data-testid="waitlist-submit-btn">Join the waitlist</button>
+          <p class="chapter mono">06 &mdash; Subscribe</p>
+          <h2>Everything the extension unlocks.</h2>
+          <ul class="price-list waitlist-feature-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Property Price Register sale history for the exact address</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Regional market trend, from the CSO price index</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Estimated value today, from the last sale plus that trend</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Nearby development activity, from planning applications</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Local demographics, from the Census</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Distance to the nearest bus stop and train station</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Rental market average and estimated gross yield</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>BER rating, floor area and price per m&sup2;, straight off the listing</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>A full one-page report for any listing, downloadable as a PDF</li>
+          </ul>
+          <p class="waitlist-copy">&euro;1.99 a month. Cancel anytime.</p>
+          <form class="waitlist-form" data-testid="checkout-form" novalidate>
+            <label class="visually-hidden" for="checkout-email">Email address</label>
+            <input id="checkout-email" name="email" type="email" autocomplete="email" placeholder="you@example.ie" data-testid="checkout-email-input" />
+            <button class="btn btn-primary btn-lg" type="submit" data-testid="checkout-submit-btn">Subscribe for &euro;1.99 / month</button>
           </form>
-          <p class="waitlist-msg" data-testid="waitlist-error" role="alert" hidden></p>
-          <div class="waitlist-success" data-testid="waitlist-success" hidden>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m8 12.5 2.8 2.8L16.5 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p>You&rsquo;re on the list &mdash; we&rsquo;ll be in touch at launch.</p>
-          </div>
-          <p class="fine">One email at launch. No newsletter, no sharing, unsubscribe with one click.</p>
+          <p class="waitlist-msg" data-testid="checkout-error" role="alert" hidden></p>
+          <p class="fine">Secure checkout via Stripe. Your email only unlocks the extension &mdash; no newsletter, no sharing.</p>
         </div>
       </div>
     </section>
@@ -433,7 +440,7 @@
         <a href="#panel" data-testid="footer-link-panel">The panel</a>
         <a href="#pricing" data-testid="footer-link-pricing">Pricing</a>
         <a href="#faq" data-testid="footer-link-faq">FAQ</a>
-        <a href="#waitlist" data-testid="footer-link-waitlist">Join the waitlist</a>
+        <a href="#waitlist" data-testid="footer-link-waitlist">Subscribe</a>
       </div>
     </div>
     <div class="container footer-legal">

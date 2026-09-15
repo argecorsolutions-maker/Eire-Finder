@@ -100,12 +100,12 @@
     updateParallax();
   }
 
-  /* Waitlist form */
-  var form = document.querySelector('[data-testid="waitlist-form"]');
-  var input = document.querySelector('[data-testid="waitlist-email-input"]');
-  var errMsg = document.querySelector('[data-testid="waitlist-error"]');
-  var success = document.querySelector('[data-testid="waitlist-success"]');
-  var submitBtn = document.querySelector('[data-testid="waitlist-submit-btn"]');
+  /* Checkout form */
+  var form = document.querySelector('[data-testid="checkout-form"]');
+  var input = document.querySelector('[data-testid="checkout-email-input"]');
+  var errMsg = document.querySelector('[data-testid="checkout-error"]');
+  var submitBtn = document.querySelector('[data-testid="checkout-submit-btn"]');
+  var API_BASE_URL = 'https://ppr-server-production.up.railway.app';
 
   if (form && input && submitBtn) {
     form.addEventListener('submit', function (e) {
@@ -122,10 +122,8 @@
 
       var original = submitBtn.textContent;
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Joining\u2026';
-      // TODO: swap to https://api.eirefinder.ie/waitlist once the API is deployed on Railway.
-      var WAITLIST_API_URL = 'http://localhost:8787/waitlist';
-      fetch(WAITLIST_API_URL, {
+      submitBtn.textContent = 'Opening checkout…';
+      fetch(API_BASE_URL + '/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: email })
@@ -136,9 +134,9 @@
             return data;
           });
         })
-        .then(function () {
-          form.hidden = true;
-          if (success) success.hidden = false;
+        .then(function (data) {
+          if (!data.url) throw new Error('Checkout is not available right now — please try again shortly.');
+          window.location.href = data.url;
         })
         .catch(function (ex) {
           errMsg.textContent = ex && ex.message ? ex.message : 'Could not reach the server — please try again shortly.';
