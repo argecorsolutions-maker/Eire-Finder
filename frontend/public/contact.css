@@ -1,0 +1,45 @@
+/* Contact page — reuses styles.css tokens (--ink, --green, --gold, --card,
+   --line, --muted, --shadow-2), adds only the card grid this page needs. */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(20px, 3vw, 32px);
+  margin-top: clamp(40px, 5vw, 56px);
+}
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+  box-shadow: var(--shadow-2);
+  padding: clamp(24px, 3vw, 32px);
+}
+.contact-card .chapter-no {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0;
+}
+.contact-card h3 {
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  font-weight: 700;
+  margin: 12px 0 8px;
+}
+.contact-card p:not(.chapter-no) {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+.contact-card .btn {
+  display: inline-block;
+}
+.contact-fine {
+  margin-top: clamp(28px, 3vw, 40px);
+  text-align: center;
+  color: var(--muted);
+}
+@media (max-width: 720px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
