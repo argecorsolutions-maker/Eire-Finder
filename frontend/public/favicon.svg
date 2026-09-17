@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
   <rect x="1" y="1" width="26" height="26" rx="7" fill="#0F5132"/>
-  <g transform="translate(12,12) scale(0.093) translate(-60,-60)">
+  <g transform="translate(12,12) scale(0.1209) translate(-60,-60)">
     <defs><path id="mark-stamp-favicon" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
     <circle cx="60" cy="60" r="56" fill="none" stroke="#FBF9F5" stroke-width="0.8" vector-effect="non-scaling-stroke"/>
     <circle cx="60" cy="60" r="33.6" fill="none" stroke="#FBF9F5" stroke-width="0.5" vector-effect="non-scaling-stroke"/>
