@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0F5132" />
+  <title>Privacy Policy — Eire Finder</title>
+  <meta name="description" content="What Eire Finder collects, what it never stores, and how the browser extension and website handle your data." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="legal.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-testid="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="Eire Finder — back to home">
+        <svg class="mark" viewBox="0 0 28 28" aria-hidden="true">
+          <rect x="1" y="1" width="26" height="26" rx="7" fill="#0F5132"/>
+          <g transform="translate(12,12) scale(0.1209) translate(-60,-60)">
+            <defs><path id="mark-stamp-privacy-header" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <circle cx="60" cy="60" r="56" fill="none" stroke="#FBF9F5" stroke-width="0.8" vector-effect="non-scaling-stroke"/>
+            <circle cx="60" cy="60" r="33.6" fill="none" stroke="#FBF9F5" stroke-width="0.5" vector-effect="non-scaling-stroke"/>
+            <text font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" letter-spacing="2.2" fill="#FBF9F5"><textPath href="#mark-stamp-privacy-header">EIRE FINDER &#183; FOR BUYERS &#183;</textPath></text>
+            <path d="M48 60l8 8 16-16" fill="none" stroke="#FBF9F5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+          </g>
+          <circle cx="18.5" cy="18.5" r="2.6" fill="#C59B27"/>
+        </svg>
+        <span>Eire&nbsp;Finder</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-chrome btn-sm" href="index.html#waitlist">
+        <span class="browser-icon chrome-icon" aria-hidden="true"></span>
+        Add to Chrome
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section legal">
+      <div class="container">
+        <p class="legal-updated">Last updated 18 September 2026</p>
+        <h1>Privacy Policy</h1>
+        <p>Eire Finder is operated by Argecor Solutions ("we", "us"). This page explains what the Eire Finder browser extension and the eirefinder.ie website collect, what we deliberately don't collect, and who else ever sees any of it. If anything here is unclear, email <a class="inline-link" href="mailto:info@eirefinder.ie">info@eirefinder.ie</a> and we'll answer directly.</p>
+
+        <h2>What the extension reads from a listing page</h2>
+        <p>When you open a supported listing on Daft.ie, MyHome.ie or Property.ie, the extension reads the details already visible on that page — the address, asking price, BER rating, floor area and property type — so it can look up the matching official sale history. That information is sent, over HTTPS, to our own server to produce your report and to OpenStreetMap's Nominatim service to convert the address into map coordinates.</p>
+        <p><strong>We do not store, log or retain any data extracted from Daft.ie, MyHome.ie or Property.ie listings on our servers.</strong> It passes through just long enough to answer your request, then it's discarded. We built it this way in part because we respect those platforms' own terms of use around their listing content, not just because it's good privacy practice.</p>
+
+        <h2>What we do store</h2>
+        <ul>
+          <li><strong>Your email address</strong>, only if you subscribe — used solely to check your subscription status and process billing through Stripe. It is never used for marketing or shared with anyone beyond Stripe.</li>
+          <li><strong>A local cache in your own browser</strong> (via <code>chrome.storage.local</code>), so re-opening a listing you already looked up doesn't repeat the same lookup. This lives on your device, not ours, and clears itself automatically after a short period — you can also clear it any time by removing the extension's data in Chrome's settings.</li>
+        </ul>
+        <p>We do not run any analytics or tracking scripts inside the extension, and it never reads or acts on pages other than the three supported listing sites.</p>
+
+        <h2>Who else sees data, and why</h2>
+        <ul>
+          <li><strong>Stripe</strong> — processes payment and subscription billing. Stripe's own privacy policy governs the payment details you give it; we only ever see your email and subscription status, never your card details.</li>
+          <li><strong>OpenStreetMap Nominatim</strong> — receives the address of the listing you're viewing, to resolve it to map coordinates, subject to their own usage policy.</li>
+          <li><strong>Railway</strong> — hosts the server that powers the extension. It processes requests in transit; we do not configure it to retain listing data either.</li>
+        </ul>
+
+        <h2>The website (eirefinder.ie)</h2>
+        <p>The site itself is static pages with no cookies, no analytics and no third-party trackers. If you email us or subscribe from here, the same rules above apply.</p>
+
+        <h2>Your rights</h2>
+        <p>Under GDPR, you can ask us to access, correct or delete any personal data we hold about you — in practice, that's just your email address and subscription record. Email <a class="inline-link" href="mailto:info@eirefinder.ie?subject=Eire%20Finder%20—%20Privacy%20%2F%20DPO%20request">our DPO contact</a> and we'll action it directly; there's no automated process to route through.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If what we collect or how we use it ever changes, we'll update this page and move the "last updated" date at the top — we won't silently widen data collection beyond what's described here.</p>
+
+        <h2>Contact</h2>
+        <p>Questions, requests, or anything unclear: <a class="inline-link" href="mailto:info@eirefinder.ie">info@eirefinder.ie</a>, or see the full <a class="inline-link" href="contact.html">contact options</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="index.html#top">
+          <svg class="mark" viewBox="0 0 28 28" aria-hidden="true">
+            <rect x="1" y="1" width="26" height="26" rx="7" fill="#C59B27"/>
+            <g transform="translate(12,12) scale(0.1209) translate(-60,-60)">
+              <defs><path id="mark-stamp-privacy-footer" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+              <circle cx="60" cy="60" r="56" fill="none" stroke="#0A2E1F" stroke-width="0.8" vector-effect="non-scaling-stroke"/>
+              <circle cx="60" cy="60" r="33.6" fill="none" stroke="#0A2E1F" stroke-width="0.5" vector-effect="non-scaling-stroke"/>
+              <text font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" letter-spacing="2.2" fill="#0A2E1F"><textPath href="#mark-stamp-privacy-footer">EIRE FINDER &#183; FOR BUYERS &#183;</textPath></text>
+              <path d="M48 60l8 8 16-16" fill="none" stroke="#0A2E1F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+            </g>
+            <circle cx="18.5" cy="18.5" r="2.6" fill="#0A2E1F"/>
+          </svg>
+          <span>Eire&nbsp;Finder</span>
+        </a>
+        <p>Independent property intelligence for Irish buyers.</p>
+      </div>
+      <div class="footer-col">
+        <p class="mono-label mono">Contact</p>
+        <a href="contact.html">All contact options</a>
+      </div>
+      <div class="footer-col">
+        <p class="mono-label mono">Legal</p>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p>© <span id="year">2026</span> Eire Finder. Eire Finder is an independent product and is not affiliated with Daft.ie, MyHome.ie, Property.ie, the Property Price Register or any Irish State body.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
