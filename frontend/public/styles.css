@@ -514,11 +514,11 @@ img, svg { display: block; }
   box-shadow: 0 24px 60px -20px rgba(0,0,0,0.4); padding: 28px 30px;
 }
 .report-modal-close {
-  position: absolute; top: 16px; right: 16px; width: 30px; height: 30px; border-radius: 8px;
-  border: 1px solid var(--line); background: var(--paper-2); color: var(--ink-soft);
-  cursor: pointer; font-size: 13px; line-height: 1;
+  position: absolute; top: 16px; right: 16px; width: 30px; height: 30px; border-radius: 6px;
+  border: 1px solid rgba(15, 81, 50, 0.35); background: var(--green-soft); color: var(--green);
+  cursor: pointer; font-size: 13px; line-height: 1; transition: background-color 0.2s;
 }
-.report-modal-close:hover { background: var(--line-strong); }
+.report-modal-close:hover { background: rgba(15, 81, 50, 0.16); }
 .report-modal h1 {
   font-family: var(--font-display); font-weight: 800; font-size: 22px; letter-spacing: -0.01em;
   margin: 0 0 6px; color: var(--ink);
