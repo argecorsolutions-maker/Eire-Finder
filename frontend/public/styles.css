@@ -473,17 +473,23 @@ img, svg { display: block; }
 .stamp-mini { top: 22px; right: 22px; width: 92px; height: 92px; opacity: 0.85; animation: none; transform: rotate(-9deg) !important; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--green-deep); color: rgba(237, 243, 238, 0.78); }
+.site-footer {
+  background:
+    radial-gradient(1100px 540px at 88% -12%, rgba(15, 81, 50, 0.08), transparent 62%),
+    repeating-linear-gradient(to bottom, transparent 0 31px, rgba(26, 35, 30, 0.05) 31px 32px),
+    var(--paper);
+  color: #000;
+}
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-block: clamp(52px, 6vw, 76px) 40px; }
-.brand-light { color: #FBF9F5; }
+.brand-light { color: #000; }
 .footer-brand p { margin-top: 16px; font-size: 14.5px; max-width: 22em; }
 .mono-label { font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 .footer-col { display: grid; gap: 10px; align-content: start; justify-items: start; }
 .footer-col a { font-size: 14.5px; transition: color 0.2s; }
-.footer-col a:hover { color: #FBF9F5; }
-.footer-legal { border-top: 1px solid rgba(237, 243, 238, 0.14); padding-block: 26px; display: grid; gap: 8px; }
+.footer-col a:hover { color: var(--green); }
+.footer-legal { border-top: 1px solid var(--line); padding-block: 26px; display: grid; gap: 8px; }
 .footer-legal p { font-size: 12.5px; line-height: 1.6; }
-.footer-legal .mono { font-size: 11px; letter-spacing: 0.08em; color: rgba(237, 243, 238, 0.5); }
+.footer-legal .mono { font-size: 11px; letter-spacing: 0.08em; color: var(--muted); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1020px) {
