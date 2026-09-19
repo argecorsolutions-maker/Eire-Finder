@@ -100,6 +100,19 @@
     updateParallax();
   }
 
+  /* Demo full report modal */
+  var reportModal = document.getElementById('demo-report-modal');
+  var reportOpenBtn = document.querySelector('[data-testid="demo-full-report-btn"]');
+  var reportCloseBtn = document.querySelector('[data-testid="demo-report-close-btn"]');
+  if (reportModal && reportOpenBtn && reportCloseBtn) {
+    var openReportModal = function () { reportModal.hidden = false; };
+    var closeReportModal = function () { reportModal.hidden = true; };
+    reportOpenBtn.addEventListener('click', openReportModal);
+    reportCloseBtn.addEventListener('click', closeReportModal);
+    reportModal.addEventListener('click', function (e) { if (e.target === reportModal) closeReportModal(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !reportModal.hidden) closeReportModal(); });
+  }
+
   /* Checkout form */
   var form = document.querySelector('[data-testid="checkout-form"]');
   var input = document.querySelector('[data-testid="checkout-email-input"]');
