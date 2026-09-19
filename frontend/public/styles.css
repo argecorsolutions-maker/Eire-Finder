@@ -293,8 +293,11 @@ img, svg { display: block; }
 .marquee-track { display: flex; width: max-content; animation: scroll 46s linear infinite; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 .marquee-list { display: flex; align-items: center; gap: 30px; padding-right: 30px; white-space: nowrap; }
-.marquee-list li { font: 500 11.5px/1 var(--font-mono); letter-spacing: 0.18em; text-transform: uppercase; }
-.marquee-list .dia { color: var(--gold); font-size: 10px; }
+.marquee-list li { display: inline-flex; align-items: center; gap: 8px; font: 500 11.5px/1 var(--font-mono); letter-spacing: 0.18em; text-transform: uppercase; }
+/* A stock-ticker tick mark, in the site's own gold rather than literal
+   red/green stock colours — reads as "live data feed" without borrowing
+   an unrelated financial palette. */
+.marquee-list .tick { color: var(--gold); font-size: 8px; }
 @keyframes scroll { to { transform: translateX(-50%); } }
 
 /* ---------- Section scaffolding ---------- */
