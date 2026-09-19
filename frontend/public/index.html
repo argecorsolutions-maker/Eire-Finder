@@ -88,10 +88,10 @@
             <div class="panel" data-testid="hero-panel">
               <div class="panel-head">
                 <div>
-                  <p class="panel-address">24 Seafield Road East</p>
+                  <p class="panel-address">156, Seafield Road East</p>
                   <p class="panel-sub">Clontarf, Dublin 3</p>
                 </div>
-                <span class="panel-ref mono">EF&middot;24317</span>
+                <button class="panel-ref-btn mono" type="button" data-testid="hero-full-report-btn">Full report</button>
               </div>
               <div class="panel-block">
                 <p class="panel-label">Sale history, Property Price Register</p>
@@ -113,10 +113,11 @@
                 </ul>
               </div>
               <div class="panel-block panel-cta-block">
-                <a class="panel-cta" href="https://www.google.com/search?q=%2224+Seafield+Road+East%22+Clontarf+Dublin+3" target="_blank" rel="noopener noreferrer" data-testid="panel-google-cta">
+                <button class="panel-cta has-tooltip" type="button" data-testid="panel-google-cta">
                   Search this address on Google
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </a>
+                  <span class="tooltip-bubble" role="tooltip">With the extension installed, this searches Google for this exact property</span>
+                </button>
               </div>
             </div>
 
@@ -249,32 +250,17 @@
         </div>
         <div class="panel-demo" data-spotlight>
           <div class="browser" data-parallax data-reveal data-testid="panel-mockup">
-            <span class="sample-tag mono">Sample data, for illustration</span>
             <div class="browser-bar">
               <span class="b-dot" aria-hidden="true"></span><span class="b-dot" aria-hidden="true"></span><span class="b-dot" aria-hidden="true"></span>
-              <span class="b-url mono">daft.ie / for-sale / 24-seafield-road-east-clontarf-dublin-3</span>
+              <span class="b-url mono">daft.ie / for-sale / 156-seafield-road-east-clontarf-dublin-3</span>
             </div>
             <div class="browser-body">
               <div class="docket">
-                <svg class="docket-house" viewBox="0 0 400 340" aria-hidden="true">
-                  <rect x="0" y="266" width="400" height="74" fill="rgba(197, 155, 39, 0.1)"/>
-                  <line x1="60" y1="266" x2="340" y2="266" stroke="rgba(26, 35, 30, 0.18)" stroke-width="2"/>
-                  <rect x="248" y="96" width="20" height="52" fill="#0F5132"/>
-                  <polygon points="200,84 302,172 98,172" fill="#0F5132"/>
-                  <rect x="128" y="172" width="144" height="94" fill="#FBF9F5" stroke="#0F5132" stroke-width="2.5"/>
-                  <rect x="150" y="198" width="30" height="30" fill="#FBF9F5" stroke="#0F5132" stroke-width="2"/>
-                  <line x1="165" y1="198" x2="165" y2="228" stroke="#0F5132" stroke-width="1.5"/>
-                  <line x1="150" y1="213" x2="180" y2="213" stroke="#0F5132" stroke-width="1.5"/>
-                  <rect x="220" y="198" width="30" height="30" fill="#FBF9F5" stroke="#0F5132" stroke-width="2"/>
-                  <line x1="235" y1="198" x2="235" y2="228" stroke="#0F5132" stroke-width="1.5"/>
-                  <line x1="220" y1="213" x2="250" y2="213" stroke="#0F5132" stroke-width="1.5"/>
-                  <rect x="187" y="220" width="26" height="46" rx="2" fill="#C59B27"/>
-                  <circle cx="206" cy="244" r="1.8" fill="#FBF9F5"/>
-                </svg>
+                <img class="docket-house" src="sample-house.jpg" alt="" />
               </div>
               <div class="listing">
                 <p class="listing-crumb mono">Daft.ie / for-sale / Dublin</p>
-                <h3 class="listing-title">24 Seafield Road East, Clontarf, Dublin 3</h3>
+                <h3 class="listing-title">156, Seafield Road East, Clontarf, Dublin 3</h3>
                 <p class="listing-price">€495,000 <span class="listing-tag mono">Private treaty</span></p>
                 <p class="listing-chips mono">3 bed &middot; 2 bath &middot; 92 m&sup2;</p>
                 <div class="skel" aria-hidden="true"></div>
@@ -286,10 +272,10 @@
             <div class="panel panel--demo">
               <div class="panel-head">
                 <div>
-                  <p class="panel-address">24 Seafield Road East</p>
+                  <p class="panel-address">156, Seafield Road East</p>
                   <p class="panel-sub">Clontarf, Dublin 3</p>
                 </div>
-                <span class="panel-ref mono">EF&middot;24317</span>
+                <button class="panel-ref-btn mono" type="button" data-testid="demo-full-report-btn" aria-haspopup="dialog" aria-controls="demo-report-modal">Full report</button>
               </div>
               <div class="panel-block">
                 <span class="block-no mono" aria-hidden="true">1</span>
@@ -315,7 +301,7 @@
               </div>
               <div class="panel-block panel-cta-block">
                 <span class="block-no mono" aria-hidden="true">4</span>
-                <a class="panel-cta" href="https://www.google.com/search?q=%2224+Seafield+Road+East%22+Clontarf+Dublin+3" target="_blank" rel="noopener noreferrer" data-testid="panel-google-cta-demo">
+                <a class="panel-cta" href="https://www.google.com/search?q=%22156+Seafield+Road+East%22+Clontarf+Dublin+3" target="_blank" rel="noopener noreferrer" data-testid="panel-google-cta-demo">
                   Search this address on Google
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
@@ -336,6 +322,47 @@
         </div>
       </div>
     </section>
+
+    <!-- ============ DEMO FULL REPORT MODAL ============ -->
+    <div class="report-modal-overlay" id="demo-report-modal" data-testid="demo-report-modal" role="dialog" aria-modal="true" aria-label="Sample full report" hidden>
+      <div class="report-modal">
+        <button class="report-modal-close" type="button" data-testid="demo-report-close-btn" aria-label="Close">&#10005;</button>
+        <p class="report-subtitle">
+          <span>Clontarf, Dublin 3 &middot; Asking &euro;495,000</span>
+          <span class="flag">Sample data, for illustration</span>
+        </p>
+        <h1>156, Seafield Road East</h1>
+        <div class="report-section">
+          <p class="report-section__title">Sale history, Property Price Register</p>
+          <div class="report-row"><span>14 June 2016</span><span class="report-price">&euro;385,000</span></div>
+          <p class="report-meta">Asking now &euro;495,000 &middot; not full market price: no</p>
+        </div>
+        <div class="report-section">
+          <p class="report-section__title">True time on market</p>
+          <div class="report-row"><span>Listed since 20 Nov 2025</span><span class="report-price">312 days</span></div>
+        </div>
+        <div class="report-section">
+          <p class="report-section__title">Market trend, CSO Residential Property Price Index</p>
+          <div class="report-row"><span>Dublin &middot; houses, 12 months</span><span class="report-price">+3.9%</span></div>
+        </div>
+        <div class="report-section">
+          <p class="report-section__title">Estimated value today</p>
+          <div class="report-row"><span>Based on 2016 sale + regional trend</span><span class="report-price">&euro;533,000</span></div>
+        </div>
+        <div class="report-section">
+          <p class="report-section__title">Same street, registered sales</p>
+          <div class="report-row"><span>18 Seafield Road East &middot; May 2024</span><span class="report-price">&euro;615,000</span></div>
+          <div class="report-row"><span>31 Seafield Road East &middot; Nov 2023</span><span class="report-price">&euro;560,000</span></div>
+          <div class="report-row"><span>7 Seafield Road East &middot; Aug 2022</span><span class="report-price">&euro;495,000</span></div>
+        </div>
+        <div class="report-section">
+          <p class="report-section__title">From the listing</p>
+          <div class="report-row"><span>BER</span><span class="report-price">C1</span></div>
+          <div class="report-row"><span>Floor area</span><span class="report-price">92 m&sup2;</span></div>
+          <div class="report-row"><span>Price per m&sup2;</span><span class="report-price">&euro;5,380</span></div>
+        </div>
+      </div>
+    </div>
 
     <!-- ============ FAQ ============ -->
     <section class="section section-tint" id="faq">
